@@ -301,6 +301,10 @@ select:focus {
   gap: 1.5rem;
 }
 
+.dashboard-single {
+  max-width: 640px;
+}
+
 .panel {
   background: rgba(255, 255, 255, 0.97);
   border-radius: 1.1rem;
@@ -531,6 +535,97 @@ select:focus {
   margin-top: 0.4rem;
 }
 
+.ai-assessment {
+  padding-top: 1.25rem;
+}
+
+.ai-assessment-panel {
+  max-width: 720px;
+}
+
+.icon-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #1e293b;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.icon-card:hover {
+  background: #e0f2fe;
+  border-color: #7dd3fc;
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+}
+
+.icon-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+}
+
+.icon-card__title {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #2563eb;
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.symptom-subpage {
+  padding-top: 1.25rem;
+}
+
+.symptom-subpage .panel {
+  max-width: 640px;
+}
+
+.content-list {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.content-list li {
+  margin-bottom: 0.5rem;
+}
+
+.content-summary {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #334155;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .app-main {
     padding-inline: 1rem;
@@ -567,6 +662,10 @@ select:focus {
 
   .form-row {
     flex-direction: column;
+  }
+
+  .icon-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 body {

@@ -26,16 +26,28 @@ export default function Navbar() {
           Home
         </Link>
         {token && (
-          <Link
-            to="/dashboard"
-            className={
-              location.pathname === "/dashboard"
-                ? "nav-link active"
-                : "nav-link"
-            }
-          >
-            Dashboard
-          </Link>
+          <>
+            <Link
+              to="/dashboard"
+              className={
+                location.pathname === "/dashboard"
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Dashboard
+            </Link>
+            <Link
+              to="/ai-assessment"
+              className={
+                location.pathname.startsWith("/ai-assessment")
+                  ? "nav-link active"
+                  : "nav-link"
+              }
+            >
+              Assessment
+            </Link>
+          </>
         )}
         {!token && (
           <>
